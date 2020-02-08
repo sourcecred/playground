@@ -1,8 +1,8 @@
 # SourceCred Playground
 
-![assets/img/challenges.png](assets/img/challenges.png)
-
 [![GitHub actions status](https://github.com/sourcecred/playground/workflows/CI/badge.svg?branch=master)](https://github.com/sourcecred/playground/actions?query=branch%3Amaster+workflow%3ACI)
+
+![assets/img/challenges.png](assets/img/challenges.png)
 
 Welcome to the SourceCred Playground! If you are a new contributor,
 you can use this repository to try your first interactions with GitHub.
