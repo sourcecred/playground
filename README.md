@@ -73,8 +73,8 @@ help you choose.
 ### Preview
 
 The CircleCI workflow represented in [.circleci/config.yml](.circleci/config.yml)
-will build a preview of the site to view. After running and passing, if you click
-on the check in the pull request, the "Artifacts" tab will have an index.html
+will build a preview of the site on any pull request. After running and passing, if you click
+on the check in the pull request, the "Artifacts" tab in the [CircleCI interface](https://circleci.com/gh/sourcecred/playground/) will have an index.html
 that will take you to the main page. Note that for paths that look like this:
 
 ```
