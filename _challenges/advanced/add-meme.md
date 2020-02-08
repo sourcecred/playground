@@ -17,8 +17,8 @@ resources:
 <br>
 
 For this challenge, you should add a meme to the gallery by way of adding
-an entry to the <a href="https://github.com/sourcecred/playground/blob/master/_data/meme.yml)
-data file">meme.yml</a> data file.
+an entry to the <a href="https://github.com/sourcecred/playground/blob/master/_data/gallery.yml)
+data file">gallery.yml</a> data file.
 
 <br>
 
