@@ -29,6 +29,8 @@ you through:
 Let's get you on your way to doing a challenge! You can browse the challenges below.
 Please [reach out](#reach-out) if you need any help, or have any questions.
 
+<br>
+
 {% for challenge in site.challenges %}<div class="card">
 <h4>{{ challenge.title }}</h4>
 {{ challenge.content }}
