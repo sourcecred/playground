@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<div class="container content-area" style='margin-top:200px'>
+  <div class="row">
+    	<p style="font-style:italic; padding-bottom:20px">{{ page.date | date: "%-d %B %Y" }}</p>
+      <p class="float: right">{% include challenge-badge.html challenge=page %}</p>
+      {{ content }} 
+
+      {% include resources.html %}
+
+      <div>
+      <a href="{{ site.url }}{{ site.baseurl }}/challenges/">Back to Challenges</a>
+      </div>
+      {% include pagination.html %}
+
+    </div>
+  </div>

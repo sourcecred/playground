@@ -1,0 +1,3 @@
+<a href="{{ site.url }}{{ site.baseurl }}{{ challenge.url }}">
+{% if challenge.url contains "intermediate" %}<span style="float:right" class="badge badge-warning">intermediate</span>{% endif %}{% if challenge.url contains "introductory" %}<span style="float:right" class="badge badge-success">introductory</span>{% endif %}{% if challenge.url contains "advanced" %}<span style="float:right" class="badge badge-danger">advanced</span>{% endif %}</a>
+

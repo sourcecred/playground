@@ -1,0 +1,36 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
+    {% else %}{{ site.title | escape }}{% endif %}
+  </title>
+
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet"> 
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:type" content="website" />  
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}" />  
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/logo/rse-stories-real-small.png" />
+  
+  {% if site.twitter %}<meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}RSE Stories{% endif %}" />
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/logo/rse-stories-real-small.png" />{% endif %}
+  {% include favicon.html %}
+
+</head>

@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<header>
+    <h1>{{ site.github_username }} <br><span>[playground]</span></h1>
+    {% include navigation.html %}
+</header>
+
+<section class="gallery">
+    <div class="row" id="message"></div> 
+        <div class="row">
+            <ul>{% for meme in site.data.gallery limit : 16 %}
+			<li><a data-title="{{ meme.alt }}" target="_blank" href="{% if meme.url %}{{ meme.url }}{% else %}#item{{ forloop.count }}{% endif %}">
+                                <img class="meme" src="{% if meme.image %}{{ site.url }}{{ site.baseurl }}/assets/gallery/{{ meme.image }}{% else %}{{ meme.external }}{% endif %}" alt="{{ meme.alt }}">
+                            </a>
+                        </li>{% endfor %}
+                </ul>
+	    <div class="clearfix" style="padding-top:30px; padding-bottom:30px; float:right;">
+		     <a class="btn btn-primary float-right" href="{{"/gallery" | relative_url }}">View All  &rarr;</a>
+	    </div>
+         </div>
+	<div class="row" style="padding-top:100px">
+            {% for card in site.data.cards %}
+            <div class="card" style="{% if card.color %}background-color:{{ card.color }}{% endif %}{% if card.fontcolor %};color:{{ card.fontcolor }}{% endif %}">
+                   <h3>{{ card.title }}</h3>
+                   <p>{{ card.html }}</p>
+            </div>{% endfor %}
+        </div>  
+	<div class="row" style="padding-top:100px">
+            <div class="column">
+		{% for post in site.posts limit : 5 %}
+		<article class="post-preview">          
+		  <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} {% if post.subtitle %}: {{ post.subtitle }}{% endif %}</a><br> Posted by
+		    {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %}
+		    on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}</p>
+		</article>
+		{% endfor %}
+		    <div class="clearfix" style="padding-top:30px; padding-bottom:30px; float:right;">
+		     <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All  &rarr;</a>
+		    </div>
+            </div>
+            <div class="column" style="padding-top:16px">
+              {% if site.twitter %}<div style="max-height:800px; padding-left:20px; overflow:scroll">
+               {% include twitter.html %}
+               </div>{% endif %}
+             </div>
+        </div>
+</section>
+
+</body>
+</html>

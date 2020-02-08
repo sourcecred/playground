@@ -1,0 +1,6 @@
+{% if page.resources %}
+<h3 style="padding-top:30px; padding-bottom:20px">Resources</h3>
+<ul class='image-list'>{% for resource in page.resources %}
+<li><a href="{{ resource.url }}" target="_blank">{{ resource.name }}</a></li>
+{% endfor %}</ul><br>{% else %}<br>{% endif %}
+<hr>

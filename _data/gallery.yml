@@ -1,0 +1,25 @@
+ - image: skip-testing.jpg
+   url: http://misko.hevery.com/code-reviewers-guide/
+   alt: Testing in software development
+ - image: this-is-fine.jpg
+   url: https://www.youtube.com/watch?v=_I94-tJlovg
+   alt: What is dev-ops?
+ - image: reproducibility.jpg
+   url: https://cloud-gc.readthedocs.io/en/stable/chapter03_advanced-tutorial/container.html
+   alt: It works on my machine
+ - image: unexpected-error-message.png
+   alt: Debugging is hard
+   url: https://github.com/turingschool-examples/intro-to-debugging#the-history-of-the-bug
+ - image: my-software-is-perfect.jpg
+   alt: My software is perfect
+   url: https://blog.codacy.com/how-to-code-review-in-a-pull-request/
+ - image: this-is-fine-fire.jpg
+   url: https://www.quora.com/Why-is-testing-code-important
+   alt: Why you should test your code
+ - image: no-sleep.jpg
+   url: https://codewithoutrules.com/2016/11/10/work-life-balance-software-engineer/
+   alt: Work and life balance is important
+ - image: looking-for-stuff.png
+   alt: If you have trouble with a bug, maybe you are looking in the wrong spot
+   url: https://softwareengineering.stackexchange.com/questions/105763/have-you-ever-found-a-bug-you-cant-solve-what-do-you-do-in-that-case
+

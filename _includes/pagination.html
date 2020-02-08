@@ -1,0 +1,10 @@
+{% if page.previous.url %}
+<a class="btn btn-primary float-left" href="{{ site.baseurl }}/{{ page.previous.url }}"
+   title="{{ page.previous.title }}">&larr; Previous</a>
+ {% endif %}
+ {% if page.next.url %}
+ <a href="{{ site.baseurl }}{{ page.next.url }}"
+ style="float:right" 
+ title="{{ page.next.title }}">Next &rarr;</a>
+ {% endif %}
+

@@ -1,0 +1,5 @@
+sourcecred_data
+__pycache__
+_site
+Gemfile.lock
+*.gem

@@ -1,0 +1,14 @@
+<!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+        <p class="copyright text-muted">Copyright &copy; sourcecred {{ 'now' | date: "%Y" }} {% if site.twitter_username %} |
+            <a href="https://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
+          </li>{% endif %}{% if site.github_username %} | <a href="https://github.com/{{ site.github_username }}/playground">GitHub</a>{% endif %} | <a href="{{ site.url }}{{ site.baseurl }}/archive/">Archive</a></p>
+      </div>
+    </div>
+  </div>
+</footer>

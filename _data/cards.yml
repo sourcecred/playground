@@ -1,0 +1,8 @@
+# - title: What is this about?
+#   color: "#7c7690ba"
+ - title: What is this about?
+   color: "#f0a392"
+   html: The SourceCred playground is a place for you to learn a bit about contributing to GitHub, or if you are already a pro, to contribute your creativity! Either way, we hope that you come here to have a little fun! Visit the <a href="about/">about</a> page to learn more, view <a href="/challenges/">current challenges</a>, or visit the <a href="https://github.com/sourcecred/playground">sourcecred playground</a> repository that renders this playground.
+ - title: What if I have a question?
+   color: "#febb95"
+   html: There are many ways to get in touch with the SourceCred community, including Discourse, Discord, GitHub, and social media! Visit the <a href="about/">about</a> page for a complete list.
