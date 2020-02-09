@@ -11,8 +11,7 @@ for the contributed content and challenges,
 or [browse the challenges here](_challenges) by level, or continue reading
 to understand more about contributing to this repository (outside of challenges).
 
-<!-- Will be added after first run and merge
-![contributors.svg](./contributors.svg)-->
+![contributors.svg](./contributors.svg)
 
 ## Challenges
 
